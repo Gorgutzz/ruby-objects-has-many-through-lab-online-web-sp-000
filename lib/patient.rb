@@ -16,9 +16,15 @@ class Patient
   end
 
 
-  def artists
-    songs.map do |song|
-    song.artist
+  def appointments
+    Appointment.all.select do |appointment|
+      appointment.patient == self
+    end
+  end
+
+  def doctors
+      Appointment.all.map do |appointment|
+      appointment.doctor
     end
   end
 
