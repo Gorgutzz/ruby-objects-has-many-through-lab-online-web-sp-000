@@ -2,7 +2,7 @@ class Artist
   @@all = []
 
   def all
-    self.all
+    @@all = all
   end
 
 
