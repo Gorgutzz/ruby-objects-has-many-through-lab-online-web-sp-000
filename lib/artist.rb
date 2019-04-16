@@ -27,7 +27,7 @@ class Artist
       song.genre
     end
   end
-    
+
 
 
 
